@@ -1,6 +1,10 @@
 class RestaurantsController < ApplicationController
 
 before_action :find_restaurant, only: [:show, :edit]
+
+  def home
+  end
+
   def index
     @restaurants = Restaurant.all
   end
